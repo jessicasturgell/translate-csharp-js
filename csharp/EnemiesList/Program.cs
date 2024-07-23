@@ -14,36 +14,42 @@ foreach (Enemy myEnemy in enemies)
     }
 }
 
-
 // A function to make and return list of enemies
 List<Enemy> GetEnemies()
 {
     // Make a list of Enemy objects
     //  How would you create a collection of enemy objects in JavaScript?
-    List<Enemy> enemies = new List<Enemy> {
-        new Enemy {
+    List<Enemy> enemies = new List<Enemy>
+    {
+        new Enemy
+        {
             FirstName = "Joshua",
             LastName = "Flowers",
-            Offenses = new List<string> {
+            Offenses = new List<string>
+            {
                 "Being a jerk to me in elementary school",
                 "Not being nice to me in elementary school"
             },
             IsReallyHated = true
         },
-        new Enemy {
+        new Enemy
+        {
             FirstName = "Darth",
             LastName = "Vader",
-            Offenses = new List<string> {
+            Offenses = new List<string>
+            {
                 "Cut off Luke's hand",
                 "Murdered all those kids",
                 "Unkind management practices"
             },
             IsReallyHated = false
         },
-        new Enemy {
+        new Enemy
+        {
             FirstName = "Betty",
             LastName = "Rudelady",
-            Offenses = new List<string> {
+            Offenses = new List<string>
+            {
                 "Phone calls in the theater",
                 "Phone calls on the bus",
                 "Phone calls in line at the grocery store",
@@ -51,12 +57,11 @@ List<Enemy> GetEnemies()
             },
             IsReallyHated = true
         },
-        new Enemy {
+        new Enemy
+        {
             FirstName = "Leon",
             LastName = "Peck",
-            Offenses = new List<string> {
-                "Keeps giving me a hotplate"
-            },
+            Offenses = new List<string> { "Keeps giving me a hotplate" },
             IsReallyHated = false
         }
     };

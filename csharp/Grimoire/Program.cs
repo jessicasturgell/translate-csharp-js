@@ -13,7 +13,6 @@ DisplaySpellBook(goodBook);
 Console.WriteLine();
 DisplaySpellBook(evilBook);
 
-
 void DisplaySpellBook(SpellBook book)
 {
     Console.WriteLine(book.Title);
@@ -22,7 +21,6 @@ void DisplaySpellBook(SpellBook book)
         Console.WriteLine($"  {aSpell.Name}");
     }
 }
-
 
 SpellBook MakeEvilSpellBook(List<Spell> allSpells)
 {
@@ -33,7 +31,6 @@ SpellBook MakeEvilSpellBook(List<Spell> allSpells)
     return evilBook;
 }
 
-
 SpellBook MakeGoodSpellBook(List<Spell> allSpells)
 {
     SpellBook goodBook = new SpellBook();
@@ -43,31 +40,36 @@ SpellBook MakeGoodSpellBook(List<Spell> allSpells)
     return goodBook;
 }
 
-
 List<Spell> GetAllSpells()
 {
-    List<Spell> allSpells = new List<Spell>() {
-        new Spell() {
+    List<Spell> allSpells = new List<Spell>()
+    {
+        new Spell()
+        {
             Name = "Turn enemy into a newt",
             IsEvil = true,
             EnergyReqired = 5.1
         },
-        new Spell() {
+        new Spell()
+        {
             Name = "Conjure some gold for a local charity",
             IsEvil = false,
             EnergyReqired = 2.99
         },
-        new Spell() {
+        new Spell()
+        {
             Name = "Give a deaf person the ability to heal",
             IsEvil = false,
             EnergyReqired = 12.2
         },
-        new Spell() {
+        new Spell()
+        {
             Name = "Make yourself emperor of the universe",
             IsEvil = true,
             EnergyReqired = 100.0
         },
-        new Spell() {
+        new Spell()
+        {
             Name = "Convince your relatives your political views are correct",
             IsEvil = false,
             EnergyReqired = 2921.5
