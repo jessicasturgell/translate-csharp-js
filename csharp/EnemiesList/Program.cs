@@ -1,4 +1,4 @@
-﻿﻿Console.WriteLine("My Enemies List!");
+﻿Console.WriteLine("My Enemies List!");
 Console.WriteLine("----------------");
 List<Enemy> enemies = GetEnemies();
 
